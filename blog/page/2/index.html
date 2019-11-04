@@ -84,7 +84,7 @@
 <meta name="description" content="iOS,Java,MiniProgram,Swift,HTML5,Android,RN,RAC">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Onlyone">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Onlyone">
 <meta property="og:description" content="iOS,Java,MiniProgram,Swift,HTML5,Android,RN,RAC">
 <meta property="og:locale" content="zh-Hans">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/page/2/">
 
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/09/iOS单例的写法注意/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/04/04/作为一个有经验的iOS工程师你这些应该最熟悉/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Onlyone">
@@ -323,7 +323,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/09/iOS单例的写法注意/" itemprop="url">iOS单例的写法注意</a></h1>
+                <a class="post-title-link" href="/2015/04/04/作为一个有经验的iOS工程师你这些应该最熟悉/" itemprop="url">作为一个有经验的iOS工程师你这些应该最熟悉</a></h1>
         
 
         <div class="post-meta">
@@ -335,8 +335,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T13:09:39+08:00">
-                2018-04-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-04T18:28:56+08:00">
+                2015-04-04
               </time>
             
 
@@ -351,8 +351,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-20T14:33:34+08:00">
-                2019-04-20
+              <time title="更新于" itemprop="dateModified" datetime="2017-06-12T10:26:16+08:00">
+                2017-06-12
               </time>
             
           </span>
@@ -387,11 +387,12 @@
       
         
           
-          12345678单例书写注意，防止别人alloc你的单例出问题！！！单例:单例模式使一个类只有一个实例.单例是在使用过程,保证全局有唯一的一个实例.这样,才能满足统一管理的功能.例如,一个数据库,只需要全局统一的读取,写入操作.不要多个实例去读写.d单例是唯一实例,它不等同于一直伴随这app的生命周
+          1、strong和copy到底怎么理解他们的区别：大部分的时候NSString的属性都是copy，那copy与strong的情况下到底有什么区别呢?
+我们遇到的问题是这样的：  在定义一个类的property时候，为property选择strong还是copy特别注意和研究明白的，如果propert
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2018/04/09/iOS单例的写法注意/#more" rel="contents">
+            <a class="btn" href="/2015/04/04/作为一个有经验的iOS工程师你这些应该最熟悉/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -442,7 +443,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/21/iOS-KVO的底层实现原理/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/01/iOS即时通讯/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Onlyone">
@@ -461,7 +462,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/21/iOS-KVO的底层实现原理/" itemprop="url">iOS-KVO的底层实现原理</a></h1>
+                <a class="post-title-link" href="/2015/03/01/iOS即时通讯/" itemprop="url">iOS即时通讯</a></h1>
         
 
         <div class="post-meta">
@@ -473,8 +474,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-21T11:09:14+08:00">
-                2017-06-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-03-01T11:05:10+08:00">
+                2015-03-01
               </time>
             
 
@@ -489,7 +490,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:05:45+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:05:36+08:00">
                 2018-12-03
               </time>
             
@@ -547,15 +548,11 @@
       
         
           
-          
-KVO 是 OC  观察者设计模式的一种KVO 的实现依赖于 OC 强大的 RuntimeKVO是Cocoa提供的一种基于KVC的机制
-
-允许一个对象(A)去监听另一个对象(B)的某个属性，当该属性改变时，系统会通知监听的对象(A)
-12345678一、KVO的基本使用流程有三步1.添加监听- (
+          iOS IM开发的一些开源、框架和教程等资料下面收集了开发即时通讯工具，如AIM、ICQ(Oscar 协议)以及Jabber(XMPP协议)的iOS客户端程序的一些开源，可以直接使用或者参考：Oscar协议开发库LibOrange：https://github.com/unixpickle/LibO
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/06/21/iOS-KVO的底层实现原理/#more" rel="contents">
+            <a class="btn" href="/2015/03/01/iOS即时通讯/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -606,7 +603,7 @@ KVO 是 OC  观察者设计模式的一种KVO 的实现依赖于 OC 强大的 Ru
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/21/iOS封装一个链式编程的应用框架/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/05/24/Runtime/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Onlyone">
@@ -625,7 +622,7 @@ KVO 是 OC  观察者设计模式的一种KVO 的实现依赖于 OC 强大的 Ru
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/21/iOS封装一个链式编程的应用框架/" itemprop="url">iOS封装一个链式编程的应用框架</a></h1>
+                <a class="post-title-link" href="/2014/05/24/Runtime/" itemprop="url">Runtime</a></h1>
         
 
         <div class="post-meta">
@@ -637,8 +634,8 @@ KVO 是 OC  观察者设计模式的一种KVO 的实现依赖于 OC 强大的 Ru
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-21T11:08:32+08:00">
-                2017-06-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-05-24T18:43:11+08:00">
+                2014-05-24
               </time>
             
 
@@ -653,297 +650,7 @@ KVO 是 OC  观察者设计模式的一种KVO 的实现依赖于 OC 强大的 Ru
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-21T11:09:38+08:00">
-                2017-06-21
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-写一个能够实现连加（乘除减类似）
-
-12n.add(10).add(20).add(30);n = 60;
-
-首先写一个NSObject的分类，便于所有类都可调用：通过分析Masonry
-
-1- (NSArray *)mas_makeConstraints:(void(^)(MASConstrai
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/21/iOS封装一个链式编程的应用框架/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/13/高级函数响应式的框架之ReactiveCocoa/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Onlyone">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Onlyone">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/13/高级函数响应式的框架之ReactiveCocoa/" itemprop="url">iOS高级函数响应式的框架之ReactiveCocoa</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-13T19:55:11+08:00">
-                2017-06-13
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-15T18:48:24+08:00">
-                2017-06-15
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-你真的会用block吗？
-
-123block作为对象的`属性`block作为方法的`参数`block作为`返回值` (扩展性特别强)
-
-在强化一下：
-
-#1.block作为对象的属性1234567Person.h#import &lt;Foundation/Foundation.h&gt;@int
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/13/高级函数响应式的框架之ReactiveCocoa/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/12/iOS11快速安装/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Onlyone">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Onlyone">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/06/12/iOS11快速安装/" itemprop="url">iOS11快速安装</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-12T10:35:08+08:00">
-                2017-06-12
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-12T10:35:42+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2017-06-12T10:25:10+08:00">
                 2017-06-12
               </time>
             
@@ -979,32 +686,15 @@ KVO 是 OC  观察者设计模式的一种KVO 的实现依赖于 OC 强大的 Ru
       
         
           
-          
-1、复制链接,使用Safari浏览器打开，安装描述文件:
+          重新定义你的OC世界观.这是南峰子版，笔者读过，很不错.
+快速开始
 
-https://d.ruanmei.com/ios/ios_11_beta_profile.mobileconfig
-
-2、浏览器打开
-
-
-
-3、安装描述文件
-
-
-
-4、点击安装
-
-
-
-5、点击重启
-
-
-
-6、点击通用，检测软件更新，要求
+（一）类与对象（二）成员变量和属性（三）消息和方法（四）Method Swizzling（五）协议与分类（六）补充&lt;
+当你读完南峰子的1可以看看这个;2深入研究Runtime,当你读完上面的内容，在读以下内容就差不多进入了一
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/06/12/iOS11快速安装/#more" rel="contents">
+            <a class="btn" href="/2014/05/24/Runtime/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1055,7 +745,7 @@ https://d.ruanmei.com/ios/ios_11_beta_profile.mobileconfig
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/08/关于接口NSURL里边混合中文及其他特殊字符/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/05/22/更换博客主题/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Onlyone">
@@ -1074,7 +764,7 @@ https://d.ruanmei.com/ios/ios_11_beta_profile.mobileconfig
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/04/08/关于接口NSURL里边混合中文及其他特殊字符/" itemprop="url">iOS关于接口NSURL里边混合中文及其他特殊字符</a></h1>
+                <a class="post-title-link" href="/2014/05/22/更换博客主题/" itemprop="url">更换博客主题</a></h1>
         
 
         <div class="post-meta">
@@ -1086,8 +776,8 @@ https://d.ruanmei.com/ios/ios_11_beta_profile.mobileconfig
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-08T14:40:55+08:00">
-                2017-04-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-05-22T14:57:50+08:00">
+                2014-05-22
               </time>
             
 
@@ -1102,454 +792,7 @@ https://d.ruanmei.com/ios/ios_11_beta_profile.mobileconfig
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-12T10:25:20+08:00">
-                2017-06-12
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-接口里边混合：中文、空格、特殊字符...项目很长时间了，代码量级很大，想要修改怕是几天几夜不能睡觉（稍微夸张）；
-
-####那么有没有更高效更安全的解决办法，不用更改一点代码，答案是：肯定的！！！
-12345解决思路：在执行URLWithString方法的时候，进行处理，那么就需要运用到runti
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/04/08/关于接口NSURL里边混合中文及其他特殊字符/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/05/Kotlin程序加载webView/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Onlyone">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Onlyone">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/03/05/Kotlin程序加载webView/" itemprop="url">Kotlin程序加载webView</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-05T14:45:44+08:00">
-                2017-03-05
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-02T15:26:13+08:00">
-                2017-06-02
-              </time>
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-我的简书:http://www.jianshu.com/u/d1cabf893d7e博客园:http://www.cnblogs.com/520rrGitHub(douxindong)
-
-官方文档
-
-https://developer.android.com/reference/android/w
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/05/Kotlin程序加载webView/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/02/Kotlin我的第一个kotlin程序/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Onlyone">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Onlyone">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/03/02/Kotlin我的第一个kotlin程序/" itemprop="url">Kotlin我的第一个kotlin程序</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-02T14:38:37+08:00">
-                2017-03-02
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:05:58+08:00">
-                2018-12-03
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/android/" itemprop="url" rel="index">
-                    <span itemprop="name">android</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          我的简书:http://www.jianshu.com/u/d1cabf893d7e博客园:http://www.cnblogs.com/520rrGitHub:https://github.com/douxindong
-
-这几天被安卓2017年开发者大会刷屏了《Google宣布Kotlin为新的A
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/02/Kotlin我的第一个kotlin程序/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/07/08/blog错误导致部分文件丢失问题解决办法/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Onlyone">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Onlyone">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/07/08/blog错误导致部分文件丢失问题解决办法/" itemprop="url">blog错误导致部分文件丢失问题解决办法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-08T09:41:52+08:00">
-                2016-07-08
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:05:51+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:04:32+08:00">
                 2018-12-03
               </time>
             
@@ -1607,17 +850,12 @@ https://developer.android.com/reference/android/w
       
         
           
-          欢迎来到 D.Onlyone的私人技术领域!
-博客文件丢失解决step11复制blog文件夹到安全地址
-step21重新创建blog文件夹在，在根录下
-step31拷贝原blog文件夹里边内容到该文件夹下
-step412重新生成静态页面$ hexo g
-step512预览一下$ hexo s
-ste
+          第一步进入主题链接12语句：# 第一步 &lt;h1&gt; 标签名[更换主题](https://hexo.io/themes/)
+第二步进入配置文档123456看文档 示例：$ git clone https://github.com/DrakeLeung/hexo-theme-again.git
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2016/07/08/blog错误导致部分文件丢失问题解决办法/#more" rel="contents">
+            <a class="btn" href="/2014/05/22/更换博客主题/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1668,7 +906,7 @@ ste
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/06/07/葵花宝典/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/05/20/东哥私人领域开通咯/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Onlyone">
@@ -1687,7 +925,7 @@ ste
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/06/07/葵花宝典/" itemprop="url">葵花宝典</a></h1>
+                <a class="post-title-link" href="/2014/05/20/东哥私人领域开通咯/" itemprop="url"><font color="#A2CD5A" size="3">我的私人领域开通咯</font></a></h1>
         
 
         <div class="post-meta">
@@ -1699,8 +937,8 @@ ste
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-07T21:52:19+08:00">
-                2015-06-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-05-20T21:05:34+08:00">
+                2014-05-20
               </time>
             
 
@@ -1715,12 +953,34 @@ ste
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2017-06-12T10:26:18+08:00">
-                2017-06-12
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-03T16:04:31+08:00">
+                2018-12-03
               </time>
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1751,11 +1011,11 @@ ste
       
         
           
-          block：👍1234567891011121314151617181920212223242526272829303132333435363738//代理协议//block 终极宝典//1.block 一般用于反向传值//第二个界面 要求 第一个界面 做点事情/* 1.block 必须定义在第二
+          欢迎来到 D.Onlyone的私人技术领域! 这是我的第一个Blog ， 联系我:1434619565@qq.com . 如果你在工作学习中遇到什么问题, 你可以询问我，或者到我的简书:http://www.jianshu.com/u/d1cabf893d7e博客园:http://www.cnblo
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2015/06/07/葵花宝典/#more" rel="contents">
+            <a class="btn" href="/2014/05/20/东哥私人领域开通咯/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1797,7 +1057,7 @@ ste
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
   </nav>
 
 
